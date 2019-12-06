@@ -28,3 +28,5 @@ def gross_for_director(nds, dir_index)
   end
   total_profit
 end
+
+directors_totals
