@@ -18,7 +18,8 @@ end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
-def gross_for_director(nds, dir_index)
+def gross_for_director(nds)
+  dir_index = 0
   mov_index = 0
   total_profit = 0
   while mov_index < nds[dir_index][:movies].count do
