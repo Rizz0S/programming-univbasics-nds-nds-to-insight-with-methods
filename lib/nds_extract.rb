@@ -22,8 +22,8 @@ end
 def gross_for_director(director_hash)
   mov_index = 0
   total_profit = 0
-  while mov_index < [director_hash][:movies].count do
-    total_profit += [director_hash][:movies][mov_index][:worldwide_gross]
+  while mov_index < director_hash[:movies].count do
+    total_profit += director_hash[:movies][mov_index][:worldwide_gross]
     mov_index += 1
   end
   total_profit
